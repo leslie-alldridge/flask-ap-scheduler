@@ -11,7 +11,7 @@ You can also use things like:
 - app.apscheduler.add_listener(my_listener)
 
 - def my_listener(event):
-    # Removes job from queue regardless, we can check logs for result if required
+    //Removes job from queue regardless, we can check logs for result if required
     if event.exception:
         print('Error: The job crashed!')
         app.apscheduler.remove_job('inv_script')
